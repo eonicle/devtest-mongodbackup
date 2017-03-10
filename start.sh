@@ -2,7 +2,7 @@
 
 set -e
 
-CRON_SCHEDULE=* * * * *
+CRON_SCHEDULE="* * * * *"
 LOGFIFO='/var/log/cron.fifo'
 if [[ ! -e "$LOGFIFO" ]]; then
   mkfifo "$LOGFIFO"
